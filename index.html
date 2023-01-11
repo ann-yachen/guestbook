@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖文留言板</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>發表一篇圖文</header>
+    <main>
+        <section>
+            <form id="form">
+                <div><label for="message">文字內容</label><input type="text" name="message" id="message" maxlength="50" required /></div>
+                <div><label for="image">圖片檔案</label><input type="file" name="image" id="image" accept="image/*" required /></div>
+                <div><button type="submit">送出</button></div>
+            </form>
+        </section>
+        <section>
+            <div id="messages">
+                <div id="loading">
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+</html>
